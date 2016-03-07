@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/main_title"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:name="com.kocomer.community.TitleFragment"/>
+    <WebView
+        android:layout_below="@+id/main_title"
+        android:layout_above="@+id/main_foot"
+        android:id="@+id/about_wv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+    <fragment
+        android:id="@+id/main_foot"
+        android:name="com.kocomer.community.FootFragment"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="8dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

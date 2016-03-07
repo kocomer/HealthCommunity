@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <fragment
+        android:id="@+id/detail_title"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:name="com.kocomer.community.TitleFragment"
+        android:layout_height="60dp"/>
+    <WebView
+        android:id="@+id/detail_wv"
+        android:layout_below="@+id/detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+</RelativeLayout>
